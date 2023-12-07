@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KEY.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Nepal-flag.gif"></a>
+            <div class="nav-links" id="navLInks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="block.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Buying and Selling Products</h1>
+    </section>
+
+<!---Blog page content--->
+<section class="block-content">
+    <div class="row">
+        <div class="blog-left">        <img src="R.png">
+            <h2>Number of sells items in 2023</h2>
+            <p>With an unwavering commitment to excellence and a passion for providing top-notch headwear, 
+                our company has experienced remarkable success in the world of fashion. 
+                Our hats have become synonymous with style and quality, capturing the hearts of customers globally.</p><br>
+
+            <p>The sheer number of sales we've achieved is a testament to the trust and satisfaction of our valued clientele. 
+                Each hat represents not just a product but a story, a journey of success and style that our customers embark upon. 
+                As we celebrate [number of sales] hats sold and counting, we are grateful for the continued support and loyalty of our customers.</p><br>
+
+            <p>It motivates us to continue pushing boundaries, setting trends, and delivering headwear that exceeds expectations. 
+                Thank you for making us the preferred choice for hat enthusiasts worldwide.</p>
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter Email">
+                    </form>
+                    <section id="feedback">
+                        <h3>Rate Your Experience</h3>
+                        <div class="rating" id="user-rating">
+                            <span class="star" data-rating="1" onclick="setRating(1)">&#9733;</span>
+                            <span class="star" data-rating="2" onclick="setRating(2)">&#9733;</span>
+                            <span class="star" data-rating="3" onclick="setRating(3)">&#9733;</span>
+                            <span class="star" data-rating="4" onclick="setRating(4)">&#9733;</span>
+                            <span class="star" data-rating="5" onclick="setRating(5)">&#9733;</span>
+                        </div>
+                        
+                        <form id="feedback-form">
+                            <label for="user-feedback">Your Feedback:</label>
+                            <textarea id="user-feedback" name="user-feedback" rows="3"></textarea>
+                            
+                            <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        <div class="blog-right">
+            <h3>Sold products</h3>
+            <div>
+                <span>Dhaka Topi</span>
+                <span>2500</span>
+            </div>
+            <div>
+                <span>Bhadgaunle Topi</span>
+                <span>2100</span>
+            </div>
+            <div>
+                <span>Woollen Topi</span>
+                <span>1800</span>
+            </div>
+            <div>
+                <span>Paag</span>
+                <span>1300</span>
+            </div>
+            <div>
+                <span>Wooden Topi</span>
+                <span>500</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!--Footer-->
+    <footer>
+
+        <!-- ... existing footer content ... -->
+    
+        <section class="footer">
+            <h3>Follow Us</h3>
+                <p>Feel free to contact us for the support</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/bibas.oli.9421?mibextid=ZbWKwL"  title="Facebook">Facebook</a>
+                    <a href="https://instagram.com/bibasoli2?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="  title="Instagram">Instagram</a>
+                    <a href="https://twitter.com/@BibasOli07"  title="Twitter">Twitter</a>
+                    <a href="https://www.linkedin.com/in/bibas-oli-17a373290"  title="LinkedIn">Linkedin</a>
+                </div>
+                <p>Made by Bibas Oli</p>
+                <p>&copy;<a href="https://english.onlinekhabar.com/nepali-topi-types.html">Online Khabar</a></p>
+        </section>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="script.js"></script>    
+    <!--Java Script for Menu-->
+    <script>
+        var navLInks = document.getElementById("navLInks");
+        function showMenu(){
+            navLInks.style.right = "0";
+        }
+        function hideMenu(){
+            navLInks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
